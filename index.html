@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
+    <title>CoLOR Generator | JavaScript DOM Manipulation</title>
+
+    <style>
+        .intro{
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            column-gap: 4rem;
+            margin-top: 4rem;
+            background-color: antiquewhite;
+            padding-top: 3rem;
+        }
+        .content div{
+            max-width: 35rem;
+        }
+        .text_color {
+            padding: 1rem 3rem;
+            border: 1px solid rgb(178, 250, 250);
+            height: 10rem;
+            background-color: antiquewhite;
+        }
+        .colorBox{
+            width: 15rem;
+            height: 15rem;
+            border: 1px solid rgb(75, 77, 77);
+            margin-bottom: 1rem;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+     <section class="header">
+        <div class="intro">
+            <h2>Random Color Generator</h2>
+        </div>
+        <div class="content">
+            <div class="colors">
+                <img src="./image/colorPicker.jpg" alt="">
+            </div>
+            <div class="text_color">
+                <p>Color Code: <span class="code">#f124s4</span></p>
+                <input type="text" value="" id="myInput">
+                <button onclick="copy()">Copy text</button>
+               
+            </div>
+            <div class="color_box">
+                <div class="colorBox"></div>
+                <button id="btn">Generate Color</button>
+            </div>
+        </div>
+     </section>
+
+     <script src="./App.js"></script>
+</body>
+</html>
